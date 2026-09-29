@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bowling Pro - Fundamentos</title>
+    <link rel="stylesheet" href="leccion1.css">
+</head>
+
+<body>
+
+    <header class="barra">
+        <div class="logo">Bowling Pro</div>
+
+        <nav>
+            <a href="inicio.html">Inicio</a>
+            <a href="lecciones.html">Lecciones</a>
+            <a href="#">Progreso</a>
+            <a href="#">Mi perfil</a>
+            <button onclick="cerrarSesion()">Cerrar sesión</button>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="encabezado">
+            <span>LECCIÓN 01</span>
+            <h1>Fundamentos del Bowling</h1>
+            <p>
+                Aprende los conceptos básicos que necesitas para comenzar
+                a mejorar como jugador.
+            </p>
+        </section>
+
+        <section class="contenido">
+
+            <article class="bloque">
+                <h2>¿Qué es el bowling?</h2>
+                <p>
+                    El bowling es un deporte en el que el jugador lanza una
+                    bola por una pista con el objetivo de derribar la mayor
+                    cantidad de bolos posible.
+                </p>
+            </article>
+
+            <article class="bloque">
+                <h2>Elementos principales</h2>
+
+                <div class="elementos">
+
+                    <div>
+                        <h3>La bola</h3>
+                        <p>
+                            Se utiliza para derribar los bolos y debe
+                            seleccionarse según las características del jugador.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h3>Los bolos</h3>
+                        <p>
+                            Son los objetivos que el jugador debe derribar
+                            durante cada lanzamiento.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h3>La pista</h3>
+                        <p>
+                            Es la superficie por donde se desplaza la bola
+                            hasta llegar a los bolos.
+                        </p>
+                    </div>
+
+                </div>
+            </article>
+
+            <article class="bloque">
+                <h2>Objetivo de la lección</h2>
+                <p>
+                    Al finalizar esta lección, podrás identificar los
+                    elementos básicos del bowling y comprender su función
+                    dentro del juego.
+                </p>
+            </article>
+
+            <div class="acciones">
+                <a href="lecciones.html">Volver a lecciones</a>
+                <button onclick="completarLeccion()">Completar lección</button>
+            </div>
+
+            <p id="mensaje"></p>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Bowling Pro © 2026</p>
+    </footer>
+
+    <script>
+        function completarLeccion() {
+            document.getElementById("mensaje").textContent =
+                "Lección completada correctamente.";
+        }
+
+        function cerrarSesion() {
+            window.location.href = "login.html";
+        }
+    </script>
+
+</body>
+</html>

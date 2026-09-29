@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bowling Pro - Lecciones</title>
+    <link rel="stylesheet" href="lecciones.css">
+</head>
+
+<body>
+
+    <header class="barra">
+        <div class="logo">Bowling Pro</div>
+
+        <nav>
+            <a href="inicio.html">Inicio</a>
+            <a href="lecciones.html">Lecciones</a>
+            <a href="#">Progreso</a>
+            <a href="#">Mi perfil</a>
+            <button onclick="cerrarSesion()">Cerrar sesión</button>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="encabezado">
+            <p>APRENDIZAJE</p>
+            <h1>Lecciones de Bowling</h1>
+            <span>Aprende paso a paso y mejora tus habilidades como jugador.</span>
+        </section>
+
+        <section class="lecciones">
+
+            <article class="tarjeta">
+                <span class="numero">01</span>
+                <h2>Fundamentos del bowling</h2>
+                <p>
+                    Conoce las reglas básicas, el equipo y los conceptos
+                    fundamentales para comenzar a jugar.
+                </p>
+                <a href="leccion1.html" class="boton-leccion">Ver lección</a>
+
+            </article>
+
+            <article class="tarjeta">
+                <span class="numero">02</span>
+                <h2>Técnica de lanzamiento</h2>
+                <p>
+                    Aprende cómo realizar correctamente el lanzamiento
+                    y mejorar la precisión de tus tiros.
+                </p>
+                <a href="leccion2.html" class="boton-leccion">Ver lección</a>
+            </article>
+
+            <article class="tarjeta">
+                <span class="numero">03</span>
+                <h2>Posición y postura</h2>
+                <p>
+                    Aprende la postura adecuada y cómo mantener el equilibrio
+                    durante el lanzamiento.
+                </p>
+                <button>Ver lección</button>
+            </article>
+
+            <article class="tarjeta">
+                <span class="numero">04</span>
+                <h2>Sistema de puntuación</h2>
+                <p>
+                    Aprende cómo se calculan los puntos y cómo interpretar
+                    los resultados de una partida.
+                </p>
+                <button>Ver lección</button>
+            </article>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Bowling Pro © 2026</p>
+    </footer>
+
+    <script>
+        function cerrarSesion() {
+            window.location.href = "login.html";
+        }
+    </script>
+
+</body>
+</html>
