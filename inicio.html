@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bowling Pro</title>
+    <link rel="stylesheet" href="inicio.css">
+</head>
+
+<body>
+
+    <header class="barra">
+        <div class="logo">Bowling Pro</div>
+
+        <nav>
+            <a href="inicio.html">Inicio</a>
+            <a href="#">Mi perfil</a>
+            <a href="#">Lecciones</a>
+            <a href="#">Progreso</a>
+            <button onclick="cerrarSesion()">Cerrar sesión</button>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="hero">
+            <div class="hero-texto">
+                <p class="etiqueta">PLATAFORMA DE APRENDIZAJE</p>
+
+                <h1>Mejora tu juego de bowling</h1>
+
+                <p>
+                    Aprende nuevas técnicas, completa tus lecciones
+                    y consulta tu progreso mientras desarrollas
+                    tus habilidades como jugador.
+                </p>
+
+                <button class="boton-principal">
+                    Comenzar aprendizaje
+                </button>
+            </div>
+
+            <div class="hero-imagen">
+                <div class="pista">
+                    <img src="img/BowlingPro.jpeg" alt="Pista de Bowling" width="400 px">
+                </div>
+            </div>
+        </section>
+
+
+        <section class="seccion">
+            <h2>Tu aprendizaje</h2>
+
+            <div class="tarjetas">
+
+                <article class="tarjeta">
+                    <div class="icono">01</div>
+                    <h3>Lecciones</h3>
+                    <p>
+                        Accede a las lecciones disponibles y aprende
+                        técnicas fundamentales del bowling.
+                    </p>
+                    <button>Ver lecciones</button>
+                </article>
+
+                <article class="tarjeta">
+                    <div class="icono">02</div>
+                    <h3>Evaluaciones</h3>
+                    <p>
+                        Realiza evaluaciones después de las lecciones
+                        para comprobar lo aprendido.
+                    </p>
+                    <button>Ver evaluaciones</button>
+                </article>
+
+                <article class="tarjeta">
+                    <div class="icono">03</div>
+                    <h3>Mi progreso</h3>
+                    <p>
+                        Consulta tu avance y conoce tus resultados
+                        durante tu proceso de aprendizaje.
+                    </p>
+                    <button>Ver progreso</button>
+                </article>
+
+            </div>
+        </section>
+
+
+        <section class="progreso">
+            <div>
+                <p class="etiqueta">TU AVANCE</p>
+                <h2>Continúa aprendiendo</h2>
+                <p>
+                    Completa tus lecciones y evaluaciones para
+                    avanzar en tu formación.
+                </p>
+            </div>
+
+            <div class="barra-progreso">
+                <div class="progreso-valor"></div>
+            </div>
+
+            <span>0% completado</span>
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>Bowling Pro © 2026</p>
+    </footer>
+
+
+    <script>
+        function cerrarSesion() {
+            window.location.href = "login.html";
+        }
+    </script>
+
+</body>
+</html>
